@@ -1,0 +1,14 @@
+body { font-family: Arial, sans-serif; padding: 20px; }
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+label { display:flex; flex-direction: column; }
+.full { grid-column: 1 / -1; }
+.actions { display:flex; justify-content:flex-end; }
+
+@media (max-width:600px){
+  .form-grid { grid-template-columns: 1fr; }
+}
